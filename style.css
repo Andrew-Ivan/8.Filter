@@ -48,6 +48,8 @@ button:active::after {
 
 body {
   background-color: #d99d61;
+  display: flex;
+  justify-content: center;
 }
 
 .wrap {
@@ -74,7 +76,7 @@ body {
 .item {
   width: 250px;
   height: 150px;
-  margin: 10px;
+  margin: 20px 10px;
 }
 
 .item img {
@@ -84,10 +86,9 @@ body {
   filter: brightness(1) grayscale(0.2) opacity(0.5);
 }
 
-.item img:hover {
+.item:hover img {
   filter: none;
-  transform: scale(1.1);
-  transition: 0.3s;
+  transition: 1s;
 }
 
 .hide {
