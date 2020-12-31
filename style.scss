@@ -65,11 +65,41 @@ body {
   width: 100%;
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   button {
     margin: 1em;
   }
+}
+
+.wrapper {
+  position: absolute;
+  top: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.item {
+  width: 250px;
+  height: 150px;
+  margin: 10px;
+}
+.item img {
+  width: 100%;
+  height: 100%;
+  transition: filter 0.5s linear;
+  filter: brightness(1) grayscale(0.2) opacity(0.5);
+}
+.item img:hover {
+  filter: none;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.hide {
+  display: none;
 }
